@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Indie+Flower&family=Itim&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Indie+Flower&family=Itim&family=Raleway&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Indie+Flower&family=Itim&family=Kaushan+Script&family=Raleway&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Gloria+Hallelujah&family=Indie+Flower&family=Itim&family=Kaushan+Script&family=Raleway&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Gloria+Hallelujah&family=Indie+Flower&family=Itim&family=Kaushan+Script&family=Parisienne&family=Raleway&family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*-----Banner------------*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+    background-image: url(./img/slider1.jpg) center center / cover;
+    animation: banner 20s infinite linear;
+}
+.banner_content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 22, 40, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    top: 5vh;
+    position: relative;
+}
+.img img {
+    width: 35px;
+    height: 40px;
+    object-fit: cover;
+    z-index: 10;
+}
+
+@keyframes banner {
+    0%{
+        background-image: url(./img/slider1.jpg);
+        object-fit: cover;
+    }
+    25%{
+        background-image: url(./img/slider1.jpg);
+        object-fit: cover;
+    }
+
+    26%{
+        background-image: url(./img/slider2.jpg);
+        object-fit: cover;
+    }
+    50%{
+        background-image: url(./img/slider2.jpg);
+        object-fit: cover;
+    }
+
+    51%{
+        background-image: url(./img/slider3.jpg);
+        object-fit: cover;
+    }
+    75%{
+        background-image: url(./img/slider3.jpg);
+        object-fit: cover;
+    }
+
+    76%{
+        background-image: url(./img/slider4.jpg);
+        object-fit: cover;
+    }
+    100%{
+        background-image: url(./img/slider4.jpg);
+        object-fit: cover;
+    }
+}
+
+
+
+.sometext {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+	text-transform: uppercase;
+    color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;    
+}
+h1:before {
+	content: '';
+	animation: changingTxt 20s linear infinite;
+    z-index: 10;
+}
+
+@keyframes changingTxt {
+	0% {
+		content: 'Jovita ';
+        font-family: 'Indie Flower';
+        font-size: 35px;
+	}
+	20% {
+		content: 'La Mama';
+        font-family: 'Gloria Hallelujah';
+        font-size: 30px;
+	}
+	40% {
+		content: 'Mas Valiosa ';
+        font-family: 'Indie Flower';
+        font-size: 30px;
+	}
+	60% {
+		content: 'del Mundo ';
+        font-family: 'Gloria Hallelujah';
+        font-size: 30px;
+	}
+	80% {
+		content: 'Dios te Bendiga ';
+        font-family: 'Indie Flower';
+        font-size: 30px;
+	}
+	100% {
+		content: 'Prov. 31:1-31. ';
+        font-family: 'Kaushan Script';
+        font-size: 30px;
+	}
+}
